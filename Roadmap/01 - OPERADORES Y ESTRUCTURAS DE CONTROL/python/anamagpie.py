@@ -95,7 +95,7 @@ finally:
 Extra: 
 Numeros comprendidos entre el 10 al 55 (incluidos) pares.
 Que no aparezca el 16. 
-Que no sean múltiplos de 3.
+Que no sean múltiplos de 3. 
 '''
 
 for number in range(10, 56):
