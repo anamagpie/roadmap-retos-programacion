@@ -35,5 +35,4 @@ my_bool = False
 my_string = "Una cadena de texto" #Se pueden usar comillas simples
 my_string2 = 'Una cadena de texto con comillas simples'
 
-
 print(*"Hola, Python!"*)
