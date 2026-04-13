@@ -7,95 +7,55 @@ EJERCICIO:
     (Entender estos conceptos es algo esencial en la gran mayoría de lenguajes)
  '''
 
- #Valor y referencia
+# --- Tipos de datos
 
- #Tipos de dato por VALOR
-"""
-Valor y referencia
-"""
+# Por valor // 
 
-# Tipos de dato por valor
+entero_a = 5
+entero_b = entero_a
+entero_b = 10
+print(entero_a)
+print(entero_b)
 
-my_int_a = 10
-my_int_b = my_int_a
-my_int_b = 20
-# my_int_a = 30
-print(my_int_a)
-print(my_int_b)
+# Por referencia // Se almacenan dentro de la misma posición de memoria. Se modifica la variable original.
 
-# Tipos de dato por referencia
-
-my_list_a = [10, 20]
-my_list_b = my_list_a
-my_list_b.append(30)
-print(my_list_a)
-print(my_list_b)
-
-# Funciones con datos por valor
+entero_a = [5, 10]
+entero_b = entero_a
+entero_b.append(15)
+print(entero_a)
+print(entero_b)
 
 
-def my_int_func(my_int: int):
-    my_int = 20
-    print(my_int)
+# Funciones: Por valor
+
+entero_c = 10
+
+def entero_func(entero: int):
+    entero = 20
+    print(entero)
 
 
-my_int_c = 10
-my_int_func(my_int_c)
-print(my_int_c)
+entero_func(entero_c)
+print(entero_c)
 
 # Funciones con datos por referencia
 
+def lista_func(lista: list):
+    lista.append(15)
 
-def my_list_func(my_list: list):
-    my_list.append(30)
+    lista_d = lista
+    lista_d.append(20)
 
-    my_list_d = my_list
-    my_list_d.append(40)
+    print(lista)
+    print(lista_d)
 
-    print(my_list)
-    print(my_list_d)
+lista_c = [5, 10]
+lista_func(lista_c)
+print(lista_c)
 
-
-my_list_c = [10, 20]
-my_list_func(my_list_c)
-print(my_list_c)
-
-"""
-Extra
-"""
-
-# Por valor
-def value(valor_a: int, valor_b: int) -> tuple:
-    temp = valor_a
-    valor_a = valor_b
-    valor_b = temp
-    return valor_a, valor_b
-
-entero_d = 10
-entero_e = 20
-entero_f, entero_g = value(entero_d, entero_e)
-
-print(f"{entero_d}, {entero_e}")
-print(f"{entero_f}, {entero_g}")
-
-# Por referencia
-
-
-def ref(value_a: list, value_b: list) -> tuple:
-    temp = value_a
-    value_a = value_b
-    value_b = temp
-    return value_a, value_b
-
-
-my_list_e = [10, 20]
-my_list_f = [30, 40]
-my_list_g, my_list_h = ref(my_list_e, my_list_f)
-print(f"{my_list_e}, {my_list_f}")
-print(f"{my_list_g}, {my_list_h}")
 
 '''
- * DIFICULTAD EXTRA:
+  * DIFICULTAD EXTRA:
  * Crea dos programas que reciban dos parámetros (cada uno) definidos como
  * variables anteriormente.
  * - Cada programa recibe, en un caso, dos parámetros por valor, y en otro caso, por referencia.
@@ -105,3 +65,33 @@ print(f"{my_list_g}, {my_list_h}")
  *   su valor en las segundas.
  *   Comprueba también que se ha conservado el valor original en las primeras.
  '''
+
+# Por valor
+
+def por_valor(valor_a: int, valor_b: int) -> tuple:
+    temp = valor_a
+    valor_a = valor_b 
+    valor_b = temp
+    return valor_a, valor_b
+
+entero_d = 5
+entero_e = 10
+entero_f, entero_g = por_valor(entero_d, entero_e)
+
+print(f"{entero_d}, {entero_e}")
+print(f"{entero_f}, {entero_g}")
+
+# Por referencia
+
+def por_referencia(valor_a: list, valor_b: list) -> tuple:
+    temp = valor_a
+    valor_a = valor_b
+    valor_b = temp
+    return valor_a, valor_b
+
+    lista_e [5, 10]
+    lista_b [50, 100]
+    lista_g, lista_h = por_referencia(lista_e, lista_f)
+
+    print(f"{lista_e}, {lista_f}")
+    print(f"{lista_g}, {lista_h}")
