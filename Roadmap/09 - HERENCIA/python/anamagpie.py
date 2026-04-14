@@ -59,7 +59,7 @@ print_sonido(new_loro)
 
  '''
 
-print("_____________________________________") #Separador
+print("_________________________________________") #Separador
 
 class Empleado:
 
