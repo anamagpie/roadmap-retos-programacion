@@ -42,7 +42,7 @@ print("Me chiva el error :)")
  * - Imprime que la ejecución ha finalizado.  
 '''
 
-print("_____________________________________")
+print("______________________________________________")
 print("Ejercicio Extra:")
 
 class ErrorInvent(Exception):
