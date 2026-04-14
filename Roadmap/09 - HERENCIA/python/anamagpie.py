@@ -13,27 +13,31 @@ class Animal: #Super clase
     def sonido(self):
        pass
         
+
 class Perro(Animal): #Subclase Perro
 
     def sonido(self):
         print("Perro: Sácame a la calle!!!")
+
 
 class Gato(Animal): #Subclase Gato
 
     def sonido(self):
         print("Gato: Dame una latita!!!")
 
-class Loro(Animal): #Subclase Gato
+
+class Loro(Animal): #Subclase Loro
 
     def sonido(self):
         print("El loro solo sabe imitar... ")
-        texto =  input ("Prueba a escribirle algo al loro, ¡a ver que pasa!: ")
-        print(texto + "..." + " crrruuu!!")
+        texto =  input ("Prueba a escribirle algo al loro, ¡a ver que pasa!: ") #Puedes introducir texto
+        print(texto + "..." + " crrruuu!!") #Imprime por pantalla lo que le pasas en el input + texto
         print("Te lo dije, solo sabe imitar...")
 
 
 def print_sonido(animal: Animal):
     animal.sonido()
+
 
 new_animal = Animal("Animal")
 print_sonido(new_animal)
@@ -44,6 +48,7 @@ print_sonido(new_gato)
 new_loro = Loro("Loro")
 print_sonido(new_loro)
 
+
 '''
 * DIFICULTAD EXTRA (opcional):
 * Implementa la jerarquía de una empresa de desarrollo formada por Empleados que
@@ -51,7 +56,9 @@ print_sonido(new_loro)
 * Cada empleado tiene un identificador y un nombre.
 * Dependiendo de su labor, tienen propiedades y funciones exclusivas de su
 * actividad, y almacenan los empleados a su cargo.
+
  '''
+
 print("_____________________________________") #Separador
 
 class Empleado:
@@ -63,7 +70,7 @@ class Empleado:
 
     def add(self, empleado):
        self.empleados.append(empleado)
-    
+
     def print_empleados(self):
         for empleado in self.empleados:
             print(empleado.nombre)
@@ -124,35 +131,3 @@ new_gerente.coordinar_empresa()
 new_gerente.print_empleados()
 new_gerente_pro1.print_empleados()
 new_programador1.print_empleados()
-
-
-
-
-
-
-
-    
-
-'''
-    def iden(self):
-        print("El id de Programadores es 444546-C")
-
-    def nombre(self):
-        print("Nombre del Gerente de Proyectos es: Inés Martín Suárez")  
-
-
-def print_identificador(empleados: Empleados):
-    empleados.identificador()
-def print_nombre(empleados: Empleados):
-    empleados.nombre() 
-
-new_empleados = Empleados("Empleados")
-print_identificador(new_empleados)
-new_gerentes = Gerentes("Gerentes")
-print_identificador(new_gerentes)
-new_gerentes_pro = GerentesDeProyectos("Gerentes de Proyectos")
-print_identificador(new_gerentes_pro)
-new_programadores = Programadores("Programadores")
-print_identificador(new_programadores)
-'''
-    
