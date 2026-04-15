@@ -22,7 +22,7 @@ async def tarea(nombre: str, duracion: int): # añado async
 asyncio.run(tarea("1 - Contar dos segundos", 2)) # añado asyncio.run()
 
 '''
- * DIFICULTAD EXTRA (opcional):
+ * DIFICULTAD EXTRA:
  * Utilizando el concepto de asincronía y la función anterior, crea
  * el siguiente programa que ejecuta en este orden:
  * - Una función C que dura 3 segundos.
