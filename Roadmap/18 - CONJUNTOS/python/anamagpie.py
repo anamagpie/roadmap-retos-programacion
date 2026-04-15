@@ -40,7 +40,7 @@ data.clear() #limpia el contenido de data != del data!!!
 print("Borra el contenido de data: ", data)
 
 '''
- * DIFICULTAD EXTRA (opcional):
+ * DIFICULTAD EXTRA:
  * Muestra ejemplos de las siguientes operaciones con conjuntos:
  * - Unión.
  * - Intersección.
