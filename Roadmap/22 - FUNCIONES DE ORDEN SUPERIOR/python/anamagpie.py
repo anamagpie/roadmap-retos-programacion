@@ -110,4 +110,5 @@ print("-------------------------------------------------")
 
 # Calificación más alta de todos los estudiantes: resultado 10
 
+print("Calificación más alta: ")
 print(max(map(lambda estudiante: max(estudiante["calificaciones"]), estudiantes)))
