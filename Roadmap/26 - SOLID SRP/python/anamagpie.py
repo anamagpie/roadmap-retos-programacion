@@ -50,13 +50,15 @@ class EmailService:
  * información básica como nombre, número de identificación y correo electrónico.
  * 3. Procesar préstamos de libros: El sistema debe permitir a los usuarios
  * tomar prestados y devolver libros.
+
+
  * Instrucciones:
  * 1. Diseña una clase que no cumple el SRP: Crea una clase Library que maneje
  * los tres aspectos mencionados anteriormente (registro de libros, registro de
  * usuarios y procesamiento de préstamos).
  * 2. Refactoriza el código: Separa las responsabilidades en diferentes clases
  * siguiendo el Principio de Responsabilidad Única.
- 
+ ------------------------------------------------------hj
 
  # Manera INCORRECTA
 
