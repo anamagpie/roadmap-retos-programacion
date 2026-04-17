@@ -1,10 +1,3 @@
-''' 
-<<<<<<< HEAD
-Funciones 
-=======
-Funciones
->>>>>>> origin/patch-2
-'''
 
 # ------ Simple
 def saludar():
