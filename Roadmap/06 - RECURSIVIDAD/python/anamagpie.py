@@ -14,7 +14,7 @@ def cuenta_atras(num: int):
 cuenta_atras(100) #Cuenta desde 100
 
 '''
- * DIFICULTAD EXTRA (opcional):
+ * DIFICULTAD EXTRA:
  * Utiliza el concepto de recursividad para:
  * - Calcular el factorial de un número concreto (la función recibe ese número).
  * - Calcular el valor de un elemento concreto (según su posición) en la 
