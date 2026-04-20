@@ -110,5 +110,4 @@ print(new_cola.desencolar())
 print(new_cola.desencolar())
 print(new_cola.desencolar())
 print(new_cola.desencolar())
-print(new_cola.desencolar())git add .
-git commit -m 
+print(new_cola.desencolar())
